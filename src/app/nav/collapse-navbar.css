@@ -82,13 +82,26 @@ nav {
   border-radius: 70px;
 }
 
+.navbar-light .navbar-toggler {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 991px) {
-  .navbar-toggler {
-    /*position: absolute;*/
+  .navbar-nav {
+    position: absolute;
   }
 
   .navigation-bar {
     display: block;
+  }
+
+  .navigation-bar .navbar-nav .nav-item {
+    position: relative;
+  }
+
+  .navigation-bar .navbar-nav .nav-item:first-child {
+    margin-top: -50px;
   }
 
   .navigation-bar ul li:first-child {
@@ -108,16 +121,14 @@ nav {
     overflow: hidden;
   }
 
-  /*.navigation-bar .navbar-nav .nav-item, .navigation-bar div .row, .navigation-bar div .col {*/
-  /*  background-color: red;*/
-  /*}*/
-
-  .dropdown-parent {
+  .navigation-bar .dropdown-parent .row {
     display: block;
+    margin-top: 70px;
   }
 
   .dropdown-menu-1 {
     margin-left: 100px;
+    margin-top: 110px;
     position: absolute;
   }
 }
