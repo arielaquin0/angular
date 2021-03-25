@@ -1,0 +1,73 @@
+:host {
+  font-family: "MTNBrighterSans-Medium","Century Gothic",Arial,sans-serif;
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.progress{
+  height: 1px;
+}
+.progress .progress-bar{
+  width: 25%
+}
+p {
+  margin: 0;
+}
+.navbar {
+  height: 80px;
+}
+.navbar-nav{
+  margin-left: 50px;
+  font-family: "Calibri";
+  font-size: 20px;
+}
+.navbar-nav li {
+  margin-right: 20px;
+}
+.navbar .img-logo {
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  text-align: center;
+  z-index: 9999;
+}
+.navbar img {
+  height: 80px;
+  width: 80px;
+}
+.navbar .search-container {
+  height: 19px;
+  width: 18px;
+}
+
+.bg-bluestrips {
+  /*background-image: repeating-linear-gradient();*/
+}
+
+.content {
+  align-items: center;
+  background-color: #FFD6D6;
+  height: 880px;
+  justify-content: center;
+}
+.background {
+  position: absolute;
+  overflow: hidden;
+  background-color: #E7F5F6;
+  height: 880px;
+  min-width: 86%;
+  z-index: 1;
+}
+.background .left {
+  background-color: #D8ECEE;
+  width: 1%;
+  height: 100%;
+  display: inline-block;
+  margin-left: 83px;
+  border-left: 4px solid #D8ECEE;
+}
+app-home {
+  z-index: 2;
+}

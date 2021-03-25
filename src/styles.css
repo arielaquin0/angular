@@ -1,0 +1,111 @@
+
+.box-bg {
+  display: none;
+  position: absolute;
+  height: 292px;
+  width: 216px;
+  border-radius: 16px;
+  background-color: #FFC000;
+  box-shadow: 0 16px 40px 0 rgba(0,0,0,0.32);
+  z-index: -1;
+}
+.box{
+  height: 284px;
+  /*width: 216px;*/
+  background: linear-gradient(180deg, #FFFFFF 0%, #EBEBEB 100%);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  z-index: 3;
+}
+.model {
+  height: 80px;
+  width: 80px;
+  max-height: 100%;
+  max-width: 100%;
+}
+.box-name {
+  color: #232323;
+  font-family: "Work Sans", Calibri;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+  text-align: center;
+}
+.box:hover{
+  background: linear-gradient(180deg, #323232 0%, #323232 100%);
+  transform-style: preserve-3d;
+  transform: scale(1.02);
+  transition: all ease 0.3s;
+}
+.box:hover .box-name{
+  color: #FFFF;
+}
+/* owl carousel */
+.owl-carousel .owl-stage {
+  display: flex;
+  background-color: red;
+}
+
+.owl-carousel .owl-item {
+  margin-top: 150px;
+  height: 292px;
+  max-width: 220px;
+}
+.owl-carousel .owl-item.active.center {
+  margin-top: 0;
+  height: 556px;
+  min-width: 456px;
+  transition: all 0.1s;
+}
+.owl-carousel .owl-item img {
+  height: 80px;
+  width: 80px;
+  max-height: 100%;
+  max-width: 100%;
+}
+.owl-carousel .owl-stage-outer {
+  padding-top: 150px;
+}
+.owl-carousel .owl-item.active.center  {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.owl-carousel .owl-item.active.center .box-bg{
+  display: block;
+}
+.owl-carousel .owl-item.active.center .box {
+  margin-top:0px;
+  /* height: 556px;
+  width: 456px;
+  min-width: 349px;
+  height: 286px; */
+  height: 556px;
+  width: 456px;
+}
+.owl-carousel .owl-item.active.center .model{
+  height: 160px;
+  width: 160px;
+}
+.owl-carousel .owl-item.active.center .box-name {
+  font-size: 40px;
+  line-height: 58px;
+}
+
+/*--responsive for mobile phone--*/
+/* @media(max-width:720px){
+    .box-bg{
+        width: 49%;
+    }
+    .box{
+        width:94%;
+    }
+    .details p {
+        font-size:16px;
+        width:250px;
+    }
+}  */
