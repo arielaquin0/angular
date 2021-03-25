@@ -6,11 +6,15 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import {NgbdCollapseNavbar} from './nav/collapse-navbar';
-import {RouterModule} from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+// const routes: Routes = [
+//   { path: '/store', component: AppComponent }
+// ];
 
 @NgModule({
   declarations: [
@@ -26,10 +30,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NgbModule, RouterModule.forRoot([])
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  // bootstrap: [NgbdCollapseNavbar],
-  exports: [
-    // MatInputModule
-  ]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
